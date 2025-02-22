@@ -19,7 +19,7 @@
 export default Cadastro; */
 
 import React, { useState } from 'react';
-import { Container,Typography,TextField,Button,FormControl,InputLabel,Select,MenuItem} from '@mui/material';
+import { Container,Typography,TextField,Button,FormControl,InputLabel,Select,MenuItem, SelectChangeEvent} from '@mui/material';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3';
@@ -45,7 +45,7 @@ function CadastroAluno() {
     genero: '',
   });
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement | { name?: string; value: unknown }>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | { name?: string; value: unknown }> | SelectChangeEvent ) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name as string]: value });
   };
