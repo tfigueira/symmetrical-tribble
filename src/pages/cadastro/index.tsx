@@ -116,6 +116,7 @@ function CadastroAluno() {
             </Grid2>
             <Grid2 size={12}>
               <DatePicker
+                format="dd/MM/yyyy"
                 label="Data de Nascimento"
                 value={formData.dataNascimento}
                 onChange={handleDateChange}
