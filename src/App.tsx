@@ -1,11 +1,12 @@
 import React from 'react';
-import CadastroAluno from './pages/cadastro';
+import { BrowserRouter } from "react-router";
+import Rotas from './routes/routes';
 
 function App() {
   return (
-    <div>
-      <CadastroAluno/>
-    </div>
+    <BrowserRouter>
+      <Rotas/>
+    </BrowserRouter>
   );
 }
 
