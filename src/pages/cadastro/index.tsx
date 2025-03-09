@@ -1,23 +1,3 @@
-//import React from "react"; //especificando o que a função vai retornar
-//import Button from '@mui/material/Button';
-
-
-/* const Cadastro: React.FC = () => {
-   return (
-
-    <>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim necessitatibus non perspiciatis atque quis quod nostrum, saepe facere, fugit quidem veritatis ab tempora assumenda doloremque praesentium? Placeat, labore. Maiores, rerum!
-        </p>
-        <Button variant="text">Text</Button>
-    </>
-
-   )
- 
-}
-
-export default Cadastro; */
-
 import React, { useState } from 'react';
 import { Container,Typography,TextField,Button,FormControl,InputLabel,Select,MenuItem, SelectChangeEvent} from '@mui/material';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
