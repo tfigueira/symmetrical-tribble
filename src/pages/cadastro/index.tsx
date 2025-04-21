@@ -133,7 +133,7 @@ function CadastroAluno() {
                   <DatePicker
                     {...field}
                     label="Data de Nascimento"
-                    format="dd/MM/yyyy"
+                    format="DD/MM/YYYY"
                     value={dayjs(field.value)}//{field.value}
                     onChange={field.onChange}
                     slotProps={{
